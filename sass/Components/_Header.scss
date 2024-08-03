@@ -10,7 +10,7 @@ header{
     width: 100%;
     user-select: none;
     .HeaderUl{
-        li{
+        li,a{
             &:hover{
                 background: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
                 -webkit-background-clip: text;
@@ -39,10 +39,12 @@ header{
         align-items: center;
         gap: 7px;
         user-select: none;
+        cursor: pointer;
         span{
             font-size: 20px;
             font-family: "Rubik", sans-serif;
             user-select: none;
+            cursor: pointer;
         }
     }
     .HeaderBut{

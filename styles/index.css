@@ -92,7 +92,7 @@ header .HeaderUl {
   font-size: 14px;
   font-family: "DM Sans", sans-serif;
 }
-header .HeaderUl li:hover {
+header .HeaderUl li:hover, header .HeaderUl a:hover {
   background: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -129,6 +129,7 @@ header .HeaderUl li:hover {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  cursor: pointer;
 }
 .SiteBar .Logo span {
   font-size: 20px;
@@ -137,6 +138,7 @@ header .HeaderUl li:hover {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  cursor: pointer;
 }
 .SiteBar .HeaderBut {
   background: -webkit-gradient(linear, left top, right top, from(#2563EB), to(#D946EF));
@@ -464,7 +466,7 @@ h2 {
 .TeamGrid .TeamFlex .NameP {
   font-size: 28px;
 }
-.TeamGrid .TeamFlex p {
+.TeamGrid .TeamFlex p, .TeamGrid .TeamFlex a {
   text-wrap: nowrap;
   margin-bottom: 10px;
   text-align: center;
@@ -1202,6 +1204,69 @@ h2 {
     font-size: 10px;
   }
 }
+.ContainerBlog {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+.ContainerBlog div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.ContainerBlog div span {
+  margin-left: 10px;
+}
+.ContainerBlog div .PBlog {
+  font-size: 30px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.ContainerBlog div .BlogDiv {
+  border-radius: 0px 20px 20px 20px;
+  border: 2px solid #1a1a1a;
+  -webkit-box-shadow: 19px 21px 34px 7px rgba(0, 0, 0, 0.8);
+          box-shadow: 19px 21px 34px 7px rgba(0, 0, 0, 0.8);
+  width: 70%;
+}
+.ContainerBlog div p {
+  width: 70%;
+  font-size: 35px;
+  padding: 10px;
+}
+.ContainerBlog div div {
+  font-size: 30px;
+  margin-top: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.ContainerBlog iframe {
+  border-radius: 20px;
+}
+
 footer {
   -webkit-user-select: none;
      -moz-user-select: none;
