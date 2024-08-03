@@ -1,0 +1,46 @@
+.My-popover2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.VideoCont{
+    padding: 20px;
+    border-radius: 10px !important;
+}
+
+#my-popover2{
+    border-radius: 15px !important;
+    margin: auto !important;
+}
+
+@media (max-width: 400px){
+
+    iframe{
+        width: 250px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .VideoCont{
+        width: 250px;
+        height: 100px;
+        padding: 0;
+    }
+
+    #my-popover2{
+        width: 250px;
+        height: 100px;
+        padding: 0;
+    }
+
+    .My-popover2{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+

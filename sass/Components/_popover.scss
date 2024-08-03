@@ -1,0 +1,212 @@
+$usablepad: 10px;
+
+.container {
+    margin: 20px auto;
+    padding: $usablepad + 50px;
+    background: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
+    padding-bottom: 200px;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.TimenSel {
+    display: flex;
+    align-items: center;
+}
+
+.mainone {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input {
+    border-bottom: 2px solid #6d6d6d;
+    padding: $usablepad;
+    margin: $usablepad;
+    width: calc(100% - 20px);
+}
+
+select {
+    border-bottom: 2px solid #6d6d6d;
+    background-color: transparent;
+    width: calc(100% - 20px);
+    margin: $usablepad 0;
+    option {
+        background-color: transparent;
+    }
+}
+
+.SelDat {
+    margin-top: 15px;
+}
+
+
+.TwoNames {
+    margin-top: 20px;
+}
+
+.section1 {
+    width: 100%;
+    margin-right: 20px;
+    #username,
+    .E-MAIL {
+        width: calc(100% - 20px);
+    }
+}
+
+.ImgCen {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.section2 {
+    width: 100%;
+    margin-left: 0;
+}
+
+#dob {
+    width: calc(50% - 20px);
+    margin-left: $usablepad;
+    margin-top: -5px;
+}
+
+.section3 {
+    margin-top: $usablepad + 30px;
+    label{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+}
+
+.ModalForm {
+    background-color: rgb(34, 160, 118);
+    color: #fafafa;
+    padding: 5px 60px 5px 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+        background-color: rgb(88, 48, 231);
+        color: #1a1a1a;
+    }
+}
+
+#subscribe{
+    width: 20px;
+}
+
+#terms{
+    width: 20px;
+}
+
+.Submit {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+    background: linear-gradient(to right, #2563EB 0%, #D946EF 100%);
+    color: #fafafa;
+    padding: 5px 60px 5px 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+        color: #fafafa;
+        filter: drop-shadow(0 0 0.75rem rgb(6, 56, 97)) !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .mainone {
+        display: block;
+    }
+    .Personal {
+        margin-top: $usablepad + 10px;
+    }
+    .Submit {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: $usablepad;
+        padding-bottom: 100px;
+    }
+    #password,
+    #confirm-password,
+    #first-name,
+    #last-name,
+    select,
+    #dob {
+        width: calc(100% - 20px); 
+        margin-left: $usablepad;
+    }
+    .Personal {
+        margin-top: 60px;
+        margin-left: -15px;
+    }
+    section {
+        height: auto;
+        width: 100%;
+        border-radius: 20px;
+        z-index: 5;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 90%; 
+        padding: $usablepad;
+        padding-bottom: 100px;
+    }
+
+    .section1,
+    .section2 {
+        width: 100%;
+    }
+
+    .section1 #username,
+    .section1 .E-MAIL,
+    .ImgCen input,
+    #first-name,
+    #last-name,
+    #dob,
+    select {
+        width: calc(100% - 20px);
+        margin-left: 0;
+    }
+
+    .ImgCen {
+        display: block;
+    }
+
+    .mainone {
+        display: block;
+    }
+
+    .Submit {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50px;
+        width: 100px;
+        padding: 5px 20px;
+    }
+
+    section {
+        height: auto;
+        width: 90%;
+        border-radius: 10px;
+        overflow-x: hidden;
+    }
+
+    input {
+        width: calc(100% - 20px);
+    }
+}

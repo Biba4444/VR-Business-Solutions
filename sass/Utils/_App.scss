@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 1);
+    font-family: "DM Sans", sans-serif;
+    transition: 250ms;
+}
+
+html{
+    scrollbar-color: #6969dd #cb9ee9;
+    scrollbar-width: thin;
+}
+
+
+body{
+    background: linear-gradient(to bottom, #11048a 0%, #541380 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+a{
+    text-decoration: none;
+}
+
+button,
+input,
+textarea{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+button{
+    cursor: pointer;
+    &:hover{
+        scale: 1.1;
+        filter: drop-shadow(0 0 0.75rem crimson);
+    }
+}
+
+ul li{
+    list-style: none;
+}
+
+select{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.Modal{
+    border: none;
+    outline: none;
+    margin: auto;
+    background: transparent;
+}
+
+

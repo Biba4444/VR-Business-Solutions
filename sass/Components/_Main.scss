@@ -1,0 +1,708 @@
+$GradientCol: var(--MainGradient);
+
+@mixin WindowBack{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 35px;
+}
+
+@mixin FDisp($JPos, $APos){
+    display: flex;
+    justify-content: $JPos;
+    align-items: $APos;
+}
+
+h2{
+    font-size: 2em;
+    margin: .67em 0;
+}
+
+.VRNIMG{
+    @include FDisp(space-around, center);
+
+}
+
+.VRspan{
+    font-weight: bold;
+    font-size: 58px;
+    background: $GradientCol;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    max-width: 550px;
+    user-select: none;
+}
+
+.Y15C{
+    margin-top: 29px;
+    max-width: 550px;
+
+    .Y15{
+        font-size: 15px;
+    }
+}
+
+.JoinMe{
+    @include FDisp(none, center);
+    gap: 32px;
+    .JoinUs{
+        border-radius: 10px;
+        background: $GradientCol;
+        padding: 20px 40px 20px 40px;
+    }
+    img{
+        user-select: none;
+        cursor: pointer;
+    }
+    span{
+        user-select: none;
+        cursor: pointer;
+    }
+}
+
+.PlayinBro{
+    width: 746px;
+    height: 746px;
+}
+
+.OurServ{
+    margin-top: 65px;
+    max-width: 100% ;
+
+    h1{
+        text-align: center;
+    }
+    .UndServ{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            user-select: none;
+            span{
+                text-wrap: wrap;
+            }
+    }
+    .GridServ{
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: [start] 370px [line2] 370px [line3] 370px [end];
+        grid-template-rows: [row1-start] 335px [row1-end]335px [last];
+        justify-content: center;
+        align-items: center;
+        gap: 90px;
+        .ServBlock{
+            &:hover{
+                scale: 1.1;
+                filter: drop-shadow(0 0 10px rgb(243, 65, 101));
+            }
+            @include WindowBack;
+            max-width: 370px;
+            max-height: 335px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            .BorderIcons{
+                border-radius: 50%;
+                padding: 20px;
+                @include FDisp(center, center);
+            }
+            .SmallPs{
+                font-size: 24px;
+                user-select: none;
+            }
+            .SmallSpans{
+                font-size: 16px
+            }
+            .LearnMore{
+                user-select: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.f{
+    background: linear-gradient(to bottom, #8A7FD9 0%, #402F8F 100%); 
+}
+
+.s{
+    background: linear-gradient(to bottom, #D97F95 0%, #923250 100%); 
+}
+
+.t{
+    background: linear-gradient(to bottom, #84D8ED 0%, #4292BB 100%); 
+    padding: 18px !important;
+}
+
+.fo{
+    background: linear-gradient(to bottom, #92EFC3 0%, #2F8F5B 100%); 
+    padding: 17px !important;
+}
+
+.fi{
+    background: linear-gradient(to bottom, #BC7FD9 0%, #923283 100%); 
+}
+
+.si{
+    background: linear-gradient(to bottom, #8684ED 0%, #4247BB 100%); 
+}
+
+.VRNIMG2{
+    @include FDisp(space-around, center);
+    margin-top: 120px;
+    .VR2{
+        max-width: 580px;
+        max-height: 330px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .Workinspan{
+            font-weight: bold;
+            font-size: 42px;
+            user-select: none;
+        }
+            .Readmore{
+                padding: 10px 20px 10px 20px;
+                border-radius: 5px;
+                background: $GradientCol;
+            }
+    }
+}
+
+.VRNIMG3{
+    @extend .VRNIMG2;
+    margin-top: 50px;
+}
+
+.MetOur{
+    width: 100%;
+    margin-top: 110px;
+    user-select: none;
+    .UndTeam{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.TeamGrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    grid-template-rows: repeat(1,260px);
+    gap: 30px;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    .TeamFlex{
+        &:hover{
+            scale: 1.1;
+            filter: drop-shadow(0 0 10px rgb(243, 65, 101));
+        }
+        .MesIcons{
+            text-align: center;
+        }
+        .AfterPh{
+            margin-top: -15px;
+        }
+        .NameP{
+            font-size: 28px;
+        }
+        p{
+            text-wrap: nowrap;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 16px;
+        }
+        padding: 30px;
+        @include FDisp(center , center);
+        flex-direction: column;
+        @include WindowBack;
+    }
+}
+
+.LNews{
+    margin-top: 120px;
+    width: 100%;
+    @include FDisp(center , center);
+    flex-direction: column;
+    user-select: none;
+    .UndNews{
+        @include WindowBack;
+        @include FDisp(center , center);
+        flex-direction: column;
+        padding: 35px 200px 35px 200px;
+        p{
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+        }
+        form{
+            margin-top: 20px;
+            cursor: text;
+            .ButDiv{
+                   @include FDisp(center , center);
+                   gap: 5px;
+            }
+            input{
+                 @include WindowBack;
+                 backdrop-filter: blur(0px);
+                 border-radius: 100px;
+                 width: 830px;
+                 height: 70px;
+                 padding: 5px 50px;
+                 position: relative;
+                 z-index: -1;
+            }
+            button{
+                margin-left: -190px;
+                border-radius: 30px;
+                background: $GradientCol;
+                padding: 15px 40px 15px 20px;
+                user-select: none;
+                cursor: pointer; 
+                position: relative;
+                z-index: 1; 
+            }
+        }    
+    }
+}
+
+.BeforeFooter{
+    user-select: none;
+    margin-top: 100px;
+    @include FDisp(space-around , center);
+    ul{
+        @include FDisp(space-around, none);
+        flex-direction: column;
+        gap: 20px;
+        li{
+            &:hover{
+                background: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+          @include FDisp(none, center);
+          gap: 5px;
+          .Logo{
+               @include FDisp(center, center);
+               gap: 7px;
+               span{
+                font-size: 20px;
+                font-family: "Rubik", sans-serif;
+                user-select: none;
+               }
+          }
+          div{
+          @include FDisp(none, center);
+          gap: 15px;
+          .sosmed{
+            cursor: pointer;
+            &:hover{
+                scale: 1.2;
+            }
+          }
+          }
+        }
+    }
+}
+
+@media (max-width: 1025px){
+    body{
+        background-position: fixed;
+    }
+    span{
+        font-size: 13px !important;
+    } 
+    h2{
+        font-size: 1em !important;
+        margin: .67em 0 !important;
+    }
+    .VRspan{
+        font-size: 40px !important;
+    }
+    .Y15{
+        font-size: 13px !important;
+    }
+    .JoinUs{
+        padding: 10px 20px 10px 20px !important;
+        text-wrap: nowrap;
+    }
+    .RV{
+        img{
+            width: 420px;
+            height: 420px;
+        }
+    }
+
+    .GridServ{
+        grid-template-columns: [start] 370px [line2] 370px [end] !important;
+        grid-template-rows: [row1-start] 335px [row1] 335px [row2-end] 335px [last] !important;
+        gap: 40px !important;
+        .ServBlock{
+            gap: 5px;
+            padding: 10px;
+        }
+    }
+    .Workinspan{
+        font-size: 25px !important;
+    }
+
+    .VRNIMG2{
+        .RV{
+            .WorkinBro{
+                width: 350px !important;
+                height: 350px !important;
+            }
+        }
+    }
+
+    .MetOur{
+        .UndTeam{
+            h2{
+                font-size: 25px !important;
+            }
+        }
+    }
+
+    .TeamGrid{
+        grid-template-columns: repeat(2, 270px);
+        grid-template-rows: repeat(2,260px);
+        .TeamFlex{
+            padding: 20px;
+            .AfterPh{
+                .NameP{
+                    font-size: 16px !important;
+                }
+                p{
+                    font-size: 13px !important;
+                }
+            }
+        }
+    }
+
+    .UndNews{
+        h2{
+            font-size: 25px !important;
+        }
+        padding: 35px 20px 35px 20px !important;
+        input{
+            width: 700px !important;
+        }
+    }
+    .BeforeFooter{
+        ul li{
+            font-size: 13px !important;
+            .sosmed{
+                width: 30px !important;
+                height: 30px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 769px){
+    body{
+        background-position: fixed;
+    }
+    .VR{
+        margin-left: 10px;
+        .VRspan{
+            font-size: 30px !important;
+        }
+        .JoinMe{
+            .JoinUs{
+                font-size: 13px;
+            }
+        }
+    }
+    .RV{
+        img{
+            width: 350px;
+            height: 350px;
+        }
+    }
+
+    .GridServ{
+        gap: 15px !important;
+        margin-left: 55px;
+        .ServBlock{
+            width: 250px !important;
+            height: 250px !important;
+            &:hover{
+                scale: 0.9 !important;
+            }
+            .SmallPs{
+                font-size: 18px !important;
+            }
+        }
+    }
+        .VR2{
+            width: 310px !important;
+        }
+
+        .VRNIMG3{
+            margin-top: 150px !important;
+        }
+        .OurServ{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column ;
+        }
+        .TeamFlex{
+            &:hover{
+                scale: 0.9 !important;
+            }
+        }
+        .UndNews{
+            width: calc(100% - 100px) !important;
+        }
+        .LNews .UndNews form input{
+            height: 60px !important;
+            width: 550px !important;
+        }
+        .LNews .UndNews form button{
+            padding: 10px 40px 10px 15px !important;
+            
+        }
+
+        .LNews .UndNews p{
+            font-size: 14px !important;
+        }
+
+        .BeforeFooter{
+            ul li{
+                font-size: 11px !important;
+                .sosmed{
+                    width: 25px !important;
+                    height: 25px !important;
+                }
+            }
+        }
+}
+
+@media (max-width: 400px){
+
+    span{
+        font-size: 8px !important;
+    }
+    ul li{
+        font-size: 8px !important;
+    }
+    .SiteBar .Logo img{
+        width: 20px;
+        height: 20px;
+    }
+
+    header .HeaderUl{
+        gap: 7px !important;
+    }
+
+    .SiteBar .HeaderBut{
+        padding: 3px 5px 3px 5px !important;
+    }
+
+    .VRNIMG{
+        margin-top: 20px;
+    }
+    
+    .VR{
+        margin-top: 30px !important;
+    }
+
+    .VR .VRspan{
+        font-size: 10px !important;
+    }
+
+    .Y15C{
+        margin-top: 5px !important;
+    }
+
+    .Y15{
+        font-size: 6px !important;
+    }
+
+    .JoinMe{
+        gap: 15px !important;
+    }
+
+    .RV img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .VR .JoinMe .JoinUs{
+        font-size: 6px !important;
+        padding: 5px 10px 5px 10px !important;
+    }
+
+    .JoinMe img{
+        width: 15px;
+        height: 15px;
+    }
+
+    .OurServ .UndServ{
+        width: 200px !important;
+    }
+
+    .OurServ h1{
+        font-size: 15px !important;
+    }
+
+    .GridServ{
+        display: block !important;
+        margin-top: 20px !important;
+        margin-left: 0 !important;
+        .ServBlock{
+            margin-bottom: 20px !important;
+        }
+    }
+
+    .OurServ .GridServ .ServBlock .BorderIcons{
+        padding: 10px !important;
+        img{
+            width: 22px;
+            height: 22px;
+        }
+    }
+
+    .GridServ .ServBlock .SmallPs{
+        font-size: 13px !important;
+    }
+
+    .OurServ .GridServ .ServBlock .LearnMore{
+        font-size: 11px !important;
+    }
+
+    .OurServ .GridServ .ServBlock{
+        padding: 20px !important;
+        width: 190px !important;
+        height: 190px !important;
+    }
+
+    .VRNIMG2{
+        margin-top: 60px;
+    }
+
+    .VRNIMG3{
+        margin-top: 60px;
+    }
+
+    .VRNIMG2 .VR2, .VRNIMG3 .VR2{
+        gap: 5px !important;
+        width: 130px !important;
+    }
+
+    .VRNIMG2 .RV .WorkinBro{
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+    .VRNIMG2 .VR2 .Workinspan{
+        font-size: 11px !important;
+    }
+
+    .Y16C .Y16{
+        font-size: 6px !important;
+    }
+
+    .VR2 .Readmore{
+        padding: 5px 10px 5px 10px !important;
+        font-size: 8px !important;
+    }
+
+    .MetOur .UndTeam h2{
+        font-size: 15px !important;
+    }
+
+    .TeamGrid{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .TeamFlex{
+        padding: 10px !important;
+        width: 190px !important;
+        height: 190px !important;
+        img{
+            width: 80px;
+            height: 80px;
+        }
+        .AfterPh{
+            .MesIcons{
+                img{
+                    width:80px !important;
+                    height: 15px !important;
+                }
+            }
+        }
+    }
+    .NameP{
+        font-size: 20px !important;
+    }
+
+    .UndNews h2{
+        font-size: 13px !important;
+    }
+
+    .LNews{
+        margin-top: 60px;
+    }
+
+    .LNews .UndNews p{
+        font-size: 10px !important;
+        text-align: center  !important;
+    }
+
+    .LNews .UndNews form input{
+        height: 30px !important;
+        width: 120px !important;
+        display: flex;
+        &::placeholder{
+            font-size: 10px;
+        }
+    }
+
+    .LNews .UndNews form button{
+        padding: 10px 50px 10px 50px !important;
+        font-size: 7px !important;
+        margin: 0;
+        position: relative;
+        left: 50px;
+        top: 10px ;
+    }
+
+    .LNews .UndNews form .ButDiv img{
+        width: 7px;
+        height: 7px;
+    }
+
+    .BeforeFooter{
+        margin-top: 50px !important;
+    }
+
+    .BeforeFooter ul{
+        gap: 10px !important;
+    }
+
+    .BeforeFooter ul li{
+        font-size: 5px !important;
+        img{
+            width:10px;
+            height:10px;
+        }
+        .sosmed{
+            width: 15px !important;
+            height: 15px !important;
+        }
+        div{
+            gap: 5px !important;
+        }
+    }
+
+}
+

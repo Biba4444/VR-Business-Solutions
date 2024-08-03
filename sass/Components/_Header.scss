@@ -1,0 +1,68 @@
+@mixin FDisp($JPos, $APos){
+    display: flex;
+    justify-content: $JPos;
+    align-items: $APos;
+}
+
+header{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    user-select: none;
+    .HeaderUl{
+        li{
+            &:hover{
+                background: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+        }
+    cursor: pointer;
+    @include FDisp(space-between, center);
+    gap: 60px;
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+    }
+}
+
+.Navigation{
+    display: flex;
+    width: 100%;
+}
+
+.SiteBar{
+    @include FDisp(space-around, center);
+    width: 100%;
+    .Logo{
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        user-select: none;
+        span{
+            font-size: 20px;
+            font-family: "Rubik", sans-serif;
+            user-select: none;
+        }
+    }
+    .HeaderBut{
+        background: linear-gradient(to right, #2563EB 0%, #D946EF 100%);
+        padding: 12px 24px 12px 24px;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 769px){
+    header .HeaderUl{
+        gap: 25px !important;
+    }
+    .SiteBar .HeaderBut{
+        padding: 9px 15px 9px 15px !important;
+    }
+}
+
+
+
+
+
+
