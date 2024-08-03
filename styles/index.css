@@ -653,7 +653,7 @@ h2 {
   scale: 1.2;
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1350px) {
   body {
     background-position: fixed;
   }
@@ -711,6 +711,82 @@ h2 {
     font-size: 13px !important;
   }
   .UndNews {
+    width: calc(100% - 100px);
+    padding: 35px 20px 35px 20px !important;
+  }
+  .UndNews h2 {
+    font-size: 25px !important;
+  }
+  .UndNews input {
+    width: 1000px !important;
+  }
+  .BeforeFooter ul li {
+    font-size: 13px !important;
+  }
+  .BeforeFooter ul li .sosmed {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    background-position: fixed;
+  }
+  span {
+    font-size: 13px !important;
+  }
+  h2 {
+    font-size: 1em !important;
+    margin: 0.67em 0 !important;
+  }
+  .VRspan {
+    font-size: 40px !important;
+  }
+  .Y15 {
+    font-size: 13px !important;
+  }
+  .JoinUs {
+    padding: 10px 20px 10px 20px !important;
+    text-wrap: nowrap;
+  }
+  .RV img {
+    width: 420px;
+    height: 420px;
+  }
+  .GridServ {
+    grid-template-columns: [start] 370px [line2] 370px [end] !important;
+    grid-template-rows: [row1-start] 335px [row1] 335px [row2-end] 335px [last] !important;
+    gap: 40px !important;
+  }
+  .GridServ .ServBlock {
+    gap: 5px;
+    padding: 10px;
+  }
+  .Workinspan {
+    font-size: 25px !important;
+  }
+  .VRNIMG2 .RV .WorkinBro, .VRNIMG3 .RV .WorkinBro {
+    width: 350px !important;
+    height: 350px !important;
+  }
+  .MetOur .UndTeam h2 {
+    font-size: 25px !important;
+  }
+  .TeamGrid {
+    grid-template-columns: repeat(2, 270px);
+    grid-template-rows: repeat(2, 260px);
+  }
+  .TeamGrid .TeamFlex {
+    padding: 20px;
+  }
+  .TeamGrid .TeamFlex .AfterPh .NameP {
+    font-size: 16px !important;
+  }
+  .TeamGrid .TeamFlex .AfterPh p {
+    font-size: 13px !important;
+  }
+  .UndNews {
+    width: calc(100% - 100px);
     padding: 35px 20px 35px 20px !important;
   }
   .UndNews h2 {
@@ -745,7 +821,7 @@ h2 {
     height: 350px;
   }
   .GridServ {
-    gap: 15px !important;
+    gap: 5px !important;
     margin-left: 55px;
   }
   .GridServ .ServBlock {
@@ -782,9 +858,6 @@ h2 {
   .TeamFlex:hover {
     scale: 0.9 !important;
   }
-  .UndNews {
-    width: calc(100% - 100px) !important;
-  }
   .LNews .UndNews form input {
     height: 60px !important;
     width: 550px !important;
@@ -801,6 +874,40 @@ h2 {
   .BeforeFooter ul li .sosmed {
     width: 25px !important;
     height: 25px !important;
+  }
+}
+@media (max-width: 670px) {
+  .GridServ {
+    display: block !important;
+    margin-top: 50px !important;
+    margin-left: 0 !important;
+  }
+  .GridServ .ServBlock {
+    margin-bottom: 50px !important;
+  }
+  .VRNIMG3 {
+    margin-top: 250px !important;
+  }
+  .MetOur {
+    margin-top: 250px !important;
+  }
+  .TeamGrid {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .TeamGrid .TeamFlex {
+    padding: 30px 50px 30px 50px !important;
+    width: 190px !important;
+    height: 190px !important;
+  }
+  .LNews .UndNews form input {
+    height: 60px !important;
+    width: 450px !important;
   }
 }
 @media (max-width: 400px) {
