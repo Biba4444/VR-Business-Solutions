@@ -717,8 +717,11 @@ h2 {
   .UndNews h2 {
     font-size: 25px !important;
   }
+  .UndNews label {
+    width: 100% !important;
+  }
   .UndNews input {
-    width: 1000px !important;
+    width: calc(100% - 200px) !important;
   }
   .BeforeFooter ul li {
     font-size: 13px !important;
@@ -792,8 +795,11 @@ h2 {
   .UndNews h2 {
     font-size: 25px !important;
   }
+  .UndNews label {
+    width: 100% !important;
+  }
   .UndNews input {
-    width: 700px !important;
+    width: calc(100% - 200px) !important;
   }
   .BeforeFooter ul li {
     font-size: 13px !important;
@@ -860,13 +866,22 @@ h2 {
   }
   .LNews .UndNews form input {
     height: 60px !important;
-    width: 550px !important;
+    width: 450px !important;
   }
   .LNews .UndNews form button {
     padding: 10px 40px 10px 15px !important;
   }
   .LNews .UndNews p {
     font-size: 14px !important;
+  }
+  .UndNews {
+    width: calc(100% - 100px);
+  }
+  .UndNews label {
+    width: 100% !important;
+  }
+  .UndNews input {
+    width: calc(100% - 10px) !important;
   }
   .BeforeFooter ul li {
     font-size: 11px !important;
@@ -901,13 +916,40 @@ h2 {
             flex-direction: column !important;
   }
   .TeamGrid .TeamFlex {
-    padding: 30px 50px 30px 50px !important;
+    padding: 30px 50px 30px 50px;
     width: 190px !important;
     height: 190px !important;
   }
   .LNews .UndNews form input {
     height: 60px !important;
-    width: 450px !important;
+    width: 300px !important;
+  }
+  .UndNews {
+    width: calc(100% - 100px);
+  }
+  .UndNews label {
+    width: 100% !important;
+  }
+  .UndNews input {
+    width: calc(100% - 200px) !important;
+  }
+}
+@media (max-width: 530px) {
+  .LNews .UndNews form input {
+    height: 60px !important;
+    width: 200px !important;
+  }
+  .VRNIMG3 {
+    margin-top: 650px !important;
+  }
+  .MetOur {
+    margin-top: 650px !important;
+  }
+  .LNews .UndNews form button {
+    padding: 10px 20px 10px 20px !important;
+    font-size: 10px !important;
+    position: relative;
+    left: 50px;
   }
 }
 @media (max-width: 400px) {
@@ -990,10 +1032,10 @@ h2 {
     height: 190px !important;
   }
   .VRNIMG2, .VRNIMG3 {
-    margin-top: 60px;
+    margin-top: 60px !important;
   }
   .VRNIMG3 {
-    margin-top: 60px;
+    margin-top: 60px !important;
   }
   .VRNIMG2 .VR2, .VRNIMG3 .VR2 {
     gap: 5px !important;
@@ -1013,6 +1055,9 @@ h2 {
     padding: 5px 10px 5px 10px !important;
     font-size: 8px !important;
   }
+  .MetOur {
+    margin-top: 60px !important;
+  }
   .MetOur .UndTeam h2 {
     font-size: 15px !important;
   }
@@ -1026,9 +1071,9 @@ h2 {
             flex-direction: column !important;
   }
   .TeamFlex {
-    padding: 10px !important;
-    width: 190px !important;
-    height: 190px !important;
+    padding: 5px !important;
+    width: 90px !important;
+    height: 90px !important;
   }
   .TeamFlex img {
     width: 80px;
