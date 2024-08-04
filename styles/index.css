@@ -146,13 +146,134 @@ header .HeaderUl li:hover, header .HeaderUl a:hover {
   padding: 12px 24px 12px 24px;
   border-radius: 5px;
 }
+.SiteBar #But-popover {
+  margin: 20px auto;
+  padding: 100px;
+  background: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
+  padding-bottom: 200px;
+  border-radius: 10px;
+  max-width: 600px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.SiteBar .contact-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.SiteBar .contact-container2 {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* flex-direction: column; */
+  gap: 40px;
+}
+.SiteBar .contact-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.SiteBar .contact-item {
+  text-wrap: nowrap;
+  margin-bottom: 20px;
+  border: 2px solid #fafafa;
+  padding: 10px;
+  border-radius: 10px;
+}
+.SiteBar .contact-item h3 {
+  margin-bottom: 10px;
+}
+.SiteBar .contact-item p {
+  margin-bottom: 5px;
+}
+.SiteBar .contact-link {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.SiteBar .contact-link:hover {
+  background-color: #0056b3;
+}
 
+@media (max-width: 1025px) {
+  #But-popover {
+    padding: 80px;
+    padding-bottom: 150px;
+  }
+  .contact-container {
+    padding: 15px;
+  }
+  .contact-container2 {
+    gap: 30px;
+  }
+}
 @media (max-width: 769px) {
+  #But-popover {
+    padding: 60px;
+    max-width: 400px !important;
+    max-height: 500px;
+  }
+  .contact-container {
+    padding: 10px !important;
+  }
+  .contact-container2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
   header .HeaderUl {
     gap: 25px !important;
   }
   .SiteBar .HeaderBut {
     padding: 9px 15px 9px 15px !important;
+  }
+}
+@media (max-width: 400px) {
+  #But-popover {
+    padding: 40px;
+    padding-bottom: 80px;
+    max-width: 120px !important;
+    max-height: 300px !important;
+  }
+  .contact-container {
+    padding: 5px;
+  }
+  .contact-container .contact-header h1 {
+    text-wrap: nowrap;
+  }
+  .contact-container .contact-header p {
+    font-size: 15px;
+  }
+  .contact-container2 {
+    gap: 10px;
+  }
+  .contact-item {
+    padding: 5px;
+  }
+  .contact-link {
+    padding: 8px 15px;
   }
 }
 h2 {
@@ -1267,6 +1388,288 @@ h2 {
   border-radius: 20px;
 }
 
+@media (max-width: 1025px) {
+  .ContainerBlog {
+    margin-top: 20px;
+  }
+  .ContainerBlog .PBlog {
+    font-size: 20px !important;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .ContainerBlog .BlogDiv p {
+    font-size: 20px;
+  }
+  .ContainerBlog .TbC {
+    font-size: 20px;
+  }
+}
+@media (max-width: 770px) {
+  .ContainerBlog {
+    margin-top: 0;
+  }
+  iframe {
+    width: 350px;
+    height: 150px;
+  }
+}
+@media (max-width: 400px) {
+  .ContainerBlog {
+    margin-top: 0;
+  }
+  .ContainerBlog div {
+    gap: 4px;
+  }
+  .ContainerBlog .PBlog {
+    font-size: 8px !important;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .ContainerBlog .BlogDiv p {
+    font-size: 10px;
+  }
+  .ContainerBlog .TbC {
+    font-size: 10px;
+  }
+  .ContainerBlog iframe {
+    width: 250px;
+    height: 100px;
+  }
+}
+@-webkit-keyframes emergency {
+  from {
+    -webkit-filter: none;
+            filter: none;
+    scale: 1;
+  }
+  to {
+    scale: 1.1;
+    -webkit-filter: drop-shadow(0 0 10px rgb(243, 65, 101));
+            filter: drop-shadow(0 0 10px rgb(243, 65, 101));
+  }
+}
+@keyframes emergency {
+  from {
+    -webkit-filter: none;
+            filter: none;
+    scale: 1;
+  }
+  to {
+    scale: 1.1;
+    -webkit-filter: drop-shadow(0 0 10px rgb(243, 65, 101));
+            filter: drop-shadow(0 0 10px rgb(243, 65, 101));
+  }
+}
+@-webkit-keyframes biba {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes biba {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.github-link-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-color: transparent;
+}
+
+.github-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 1.5rem;
+  border: 2px solid #1a1a1a;
+  padding: 10px 20px;
+  border-radius: 5px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  -webkit-animation: emergency 2s infinite alternate cubic-bezier(0.1, 0.7, 1, 1) 0s;
+          animation: emergency 2s infinite alternate cubic-bezier(0.1, 0.7, 1, 1) 0s;
+}
+.github-link:hover {
+  background-color: #fafafa;
+  color: transparent;
+  border-color: #fafafa;
+}
+.github-link:hover .github-icon {
+  background-color: transparent;
+}
+.github-link:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #fafafa;
+  color: #1a1a1a;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 20px;
+  -webkit-animation-name: biba;
+          animation-name: biba;
+  -webkit-animation-duration: 1.7s;
+          animation-duration: 1.7s;
+  -webkit-animation-duration: normal;
+          animation-duration: normal;
+}
+.github-link .github-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  -webkit-transition: -webkit-filter 0.3s ease;
+  transition: -webkit-filter 0.3s ease;
+  transition: filter 0.3s ease;
+  transition: filter 0.3s ease, -webkit-filter 0.3s ease;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+}
+
+@media (max-width: 1025px) {
+  .github-link-container .github-link {
+    font-size: 20px;
+  }
+}
+@media (max-width: 770px) {
+  .github-link-container .github-link {
+    font-size: 15px;
+  }
+  .github-link-container .github-link::after {
+    font-size: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .github-link-container .github-link {
+    font-size: 10px;
+  }
+  .github-link-container .github-link::after {
+    font-size: 10px;
+  }
+  .github-link-container .github-link .github-icon {
+    width: 15px;
+    height: 15px;
+  }
+}
+.pricing-container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pricing-Kitty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 35px;
+  padding: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.pricing-Kitty p {
+  font-size: 40px;
+}
+.pricing-Kitty img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+@media (max-width: 1025px) {
+  .pricing-container .pricing-Kitty {
+    width: 80%;
+  }
+  .pricing-container .pricing-Kitty p {
+    font-size: 20px;
+  }
+  .pricing-container .pricing-Kitty div {
+    font-size: 15px;
+  }
+  .pricing-container .pricing-Kitty img {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (max-width: 770px) {
+  .pricing-container .pricing-Kitty {
+    width: 80%;
+  }
+  .pricing-container .pricing-Kitty p {
+    font-size: 14px;
+  }
+  .pricing-container .pricing-Kitty div {
+    font-size: 10px;
+  }
+  .pricing-container .pricing-Kitty img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 400px) {
+  .pricing-container .pricing-Kitty {
+    padding: 20px;
+    gap: 10px;
+    width: 90%;
+  }
+  .pricing-container .pricing-Kitty p {
+    text-wrap: nowrap;
+    font-size: 8px;
+  }
+  .pricing-container .pricing-Kitty div {
+    font-size: 6px;
+    text-wrap: nowrap;
+  }
+  .pricing-container .pricing-Kitty img {
+    width: 100px;
+    height: 100px;
+  }
+}
 footer {
   -webkit-user-select: none;
      -moz-user-select: none;

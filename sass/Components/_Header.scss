@@ -52,14 +52,142 @@ header{
         padding: 12px 24px 12px 24px;
         border-radius: 5px;
     }
+
+    #But-popover{
+            margin: 20px auto;
+            padding: 100px;
+            background: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
+            padding-bottom: 200px;
+            border-radius: 10px;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        
+    }
+
+    .contact-container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-container2{
+        margin-top: 50px;
+        display: flex;
+        /* flex-direction: column; */
+        gap: 40px;
+    }
+
+    .contact-header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contact-item {
+        text-wrap: nowrap;
+        margin-bottom: 20px;
+        border: 2px solid #fafafa;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .contact-item h3 {
+        margin-bottom: 10px;
+    }
+
+    .contact-item p {
+        margin-bottom: 5px;
+    }
+
+    .contact-link {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 10px;
+        background-color: #007BFF;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .contact-link:hover {
+        background-color: #0056b3;
+    }
+}
+
+@media (max-width: 1025px) {
+    #But-popover {
+        padding: 80px;
+        padding-bottom: 150px;
+    }
+
+    .contact-container {
+        padding: 15px;
+    }
+
+    .contact-container2 {
+        gap: 30px;
+    }
 }
 
 @media (max-width: 769px){
+    #But-popover {
+        padding: 60px ;
+        max-width: 400px !important;
+        max-height: 500px;
+    }
+
+    .contact-container {
+        padding: 10px !important;
+    }
+
+    .contact-container2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
     header .HeaderUl{
         gap: 25px !important;
     }
     .SiteBar .HeaderBut{
         padding: 9px 15px 9px 15px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    #But-popover {
+        padding: 40px;
+        padding-bottom: 80px;
+        max-width: 120px !important;
+        max-height: 300px !important;
+    }
+
+    .contact-container {
+        padding: 5px;
+        .contact-header{
+            h1{
+                text-wrap: nowrap;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+
+    .contact-container2 {
+        gap: 10px;
+    }
+
+    .contact-item {
+        padding: 5px;
+    }
+
+    .contact-link {
+        padding: 8px 15px;
     }
 }
 
